@@ -1,6 +1,6 @@
-# PROJECT_NAME
+# template-vue-gridsome
 
-Visit site [here](PROJECT_LINK)!
+A Gridsome starter pack to build app with Vue.js
 
 ## Build Setup
 
