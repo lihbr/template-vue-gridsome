@@ -57,7 +57,8 @@ module.exports = {
         plugins: postcssPlugins
       },
       sass: {
-        implementation: require("sass")
+        implementation: require("sass"),
+        fiber: require("fibers")
       }
     }
   },
