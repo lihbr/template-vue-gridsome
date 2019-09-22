@@ -10,7 +10,7 @@
 import objectFitImages from "object-fit-images";
 
 export default {
-  head() {
+  metaInfo() {
     return {
       htmlAttrs: {
         class: this.getHtmlClass().join(" ")

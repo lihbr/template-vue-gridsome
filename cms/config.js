@@ -21,7 +21,7 @@ const media_folder = "static/assets/img/uploads"; // Media files will be stored 
 // Back office
 const site_url = "https://SITE_URL.netlify.com";
 const display_url = "https://SITE_URL.netlify.com";
-const logo_url = "https://SITE_URL.netlify.com/_admin/admin_logo.svg";
+const logo_url = "https://SITE_URL.netlify.com/_adminAssets/logo.svg";
 
 // Enable to display preview links
 const show_preview_links = true;
@@ -38,7 +38,7 @@ export default {
 
   backend,
 
-  // publish_mode, // Disable for GitLab
+  publish_mode, // Disable for GitLab
 
   media_folder,
 
