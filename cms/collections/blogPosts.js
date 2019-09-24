@@ -3,7 +3,7 @@ export default {
   label: "Blog Posts",
   label_singular: "Blog Post",
   description: "Basic blog posts",
-  folder: "./content/posts/blog",
+  folder: "content/posts/blog",
   extension: "json",
   format: "json",
   create: true, // Allow users to create new documents in this collection
