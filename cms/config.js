@@ -17,6 +17,14 @@ const publish_mode = "editorial_workflow";
 
 const media_folder = "static/assets/img/uploads"; // Media files will be stored in the repo under static/assets/img/uploads
 // const public_folder = "/assets/img/uploads" // The src attribute for uploaded media will begin with /assets/img/uploads
+const media_library = {
+  name: "cloudinary",
+  use_secure_url: true,
+  config: {
+    cloud_name: "",
+    api_key: 0
+  }
+};
 
 // Back office
 const site_url = "https://SITE_URL.netlify.com";
@@ -41,6 +49,8 @@ export default {
   publish_mode, // Disable for GitLab
 
   media_folder,
+  // public_folder,
+  media_library,
 
   site_url,
   display_url,
