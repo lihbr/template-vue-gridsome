@@ -110,11 +110,17 @@ module.exports = {
     // Accessible from transition-
     transitionDuration: {
       default: "1500ms",
+      eighth: "187ms",
+      quarter: "375ms",
       half: "750ms",
       double: "3000ms"
     },
     // Accessible from transition-delay-
-    transitionDelay: theme => theme("transitionDuration"),
+    transitionDelay: theme => ({
+      base: theme("transitionDuration.default"),
+      ...theme("transitionDuration"),
+      default: 0
+    }),
     // Accessible from transition-
     transitionTimingFunction: {
       default: "cubic-bezier(.54,.1,0,.99)",
@@ -204,11 +210,11 @@ module.exports = {
       const objectFitUtilities = {
         ".object-cover": {
           objectFit: "cover",
-          fontFamily: "object-fit: cover"
+          fontFamily: "'object-fit: cover'"
         },
         ".object-contain": {
           objectFit: "contain",
-          fontFamily: "object-fit: contain"
+          fontFamily: "'object-fit: contain'"
         }
       };
       addUtilities(objectFitUtilities, {
