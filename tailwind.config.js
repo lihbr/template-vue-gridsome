@@ -36,11 +36,11 @@ module.exports = {
       inherit: "inherit",
       black: {
         default: "#111111",
-        "o-20": "rgb(17, 17, 17, 0.2)"
+        "o-20": "rgba(17, 17, 17, 0.2)"
       },
       white: {
         default: "#fefefe",
-        "o-20": "rgb(254, 254, 254, 0.2)"
+        "o-20": "rgba(254, 254, 254, 0.2)"
       }
     },
     fontSize: {
