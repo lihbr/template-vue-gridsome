@@ -188,8 +188,8 @@ module.exports = {
       maxWidth: theme => theme("spacing"),
       minWidth: theme => theme("spacing"),
       height: theme => theme("width"),
-      minHeight: theme => theme("spacing"),
-      minHeight: theme => theme("spacing"),
+      maxHeight: theme => theme("maxWidth"),
+      minHeight: theme => theme("minWidth"),
       lineHeight: {
         "0": 0
       }
