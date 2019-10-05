@@ -185,11 +185,11 @@ module.exports = {
         "80vh": "80vh",
         "90vh": "90vh"
       },
-      maxWidth: theme => theme("spacing"),
-      minWidth: theme => theme("spacing"),
-      height: theme => theme("width"),
-      maxHeight: theme => theme("maxWidth"),
-      minHeight: theme => theme("minWidth"),
+      maxWidth: theme => ({ ...theme("spacing"), screen: "100vw" }),
+      minWidth: theme => ({ ...theme("spacing"), screen: "100vw" }),
+      height: theme => ({ ...theme("width"), screen: "100vh" }),
+      maxHeight: theme => ({ ...theme("maxWidth"), screen: "100vh" }),
+      minHeight: theme => ({ ...theme("maxWidth"), screen: "100vh" }),
       lineHeight: {
         "0": 0
       }
