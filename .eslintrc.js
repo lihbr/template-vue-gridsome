@@ -42,5 +42,18 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  overrides: [
+    {
+      files: "*.vue",
+      rules: {
+        "prettier/prettier": [
+          "error",
+          {
+            parser: "vue"
+          }
+        ]
+      }
+    }
+  ]
 };
