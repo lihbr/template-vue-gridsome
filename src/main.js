@@ -11,7 +11,7 @@ import "~/assets/sass/style.sass";
 import store from "~/store";
 
 // Components
-import SmartLink from "~/components/controls/SmartLink.vue";
+import SmartLink from "~/components/controls/SmartLink.js";
 import DefaultLayout from "~/layouts/Default.vue";
 
 export default function(Vue, { appOptions, router, head, isClient }) {
